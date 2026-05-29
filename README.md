@@ -2,6 +2,7 @@
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Flávio_Salgado-blue?logo=linkedin)](https://www.linkedin.com/in/flávio-salgado-b351b416b/)
 [![GitHub](https://img.shields.io/badge/GitHub-flaviosalgado2-black?logo=github)](https://github.com/flaviosalgado2)
+[![YouTube](https://img.shields.io/badge/YouTube-Programador_Paraense-red?logo=youtube)](https://www.youtube.com/@ProgramadorParaense)
 [![Email](https://img.shields.io/badge/Email-flaviosalgado2@hotmail.com-red?logo=microsoft-outlook)](mailto:flaviosalgado2@hotmail.com)
 [![WhatsApp](https://img.shields.io/badge/WhatsApp-(94)98135--3509-green?logo=whatsapp)](https://wa.me/5594981353509)
 
@@ -94,7 +95,8 @@ Engenheiro da Computação e Desenvolvedor de Sistemas Sênior com mais de 8 ano
 📱 WhatsApp: [(94) 98135-3509](https://wa.me/5594981353509)  
 💼 LinkedIn: [Flávio Salgado](https://www.linkedin.com/in/flaviosalgado2/)  
 💻 GitHub: [flaviosalgado2](https://github.com/flaviosalgado2)  
-🌐 Website: [flaviosalgado2.github.io](https://flaviosalgado2.github.io/)
+� YouTube: [Programador Paraense](https://www.youtube.com/@ProgramadorParaense)  
+�🌐 Website: [flaviosalgado2.github.io](https://flaviosalgado2.github.io/)
 
 📍 **Localização:** Belém - PA, Brasil  
 🌎 **Disponibilidade:** Remoto
