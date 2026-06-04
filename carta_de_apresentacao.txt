@@ -1,0 +1,9 @@
+Sou Engenheiro de Computação pela Universidade Federal do Sul e Sudeste do Pará, com especialização em Desenvolvimento Web Full Stack pela PUC Minas. Com mais de 8 anos de carreira, desenvolvi sistemas robustos e escaláveis para clientes de grande porte em diferentes segmentos do mercado.
+
+Na Montreal, atuei em projetos estratégicos para SEDUC-PA, Metrô SP e Banpará, evoluindo de Analista Jr a Pleno em ambiente de alta demanda. Na Canal Telecom, desenvolvi plataformas de telefonia VoIP com Laravel, Vue.js, Socket.io e Asterisk.
+
+Atualmente na Hammer Consult, entrego soluções para o Ministério Público de MG com stack moderna: PHP, Laravel, Golang, Vue.js, MongoDB, Kafka, ElasticSearch e outras.
+
+Tenho sólido domínio em SOLID, Design Patterns, Arquitetura Hexagonal e Persistência Poliglota, priorizando código limpo, testável e soluções escaláveis.
+
+Estou motivado e disponível para contribuir com excelência, inovação e comprometimento com os resultados da sua equipe.
