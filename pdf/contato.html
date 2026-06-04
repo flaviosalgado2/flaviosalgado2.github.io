@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<style>
+@page { size: A4; margin: 0; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background: #0f172a;
+    color: #ffffff;
+    padding: 30px;
+}
+.container { width: 100%; max-width: 740px; margin: 0 auto; }
+.header {
+    text-align: center; padding: 20px 0 25px 0;
+    border-bottom: 2px solid rgba(255,255,255,0.15); margin-bottom: 25px;
+}
+.header h1 {
+    font-size: 38px; font-weight: 700; letter-spacing: 3px; margin-bottom: 8px;
+    color: #818cf8;
+}
+.header .subtitle {
+    font-size: 14px; color: rgba(255,255,255,0.6); font-weight: 400;
+    letter-spacing: 6px; text-transform: uppercase;
+}
+.grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 18px;
+}
+.card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 14px; padding: 22px 18px;
+    text-align: center;
+}
+.card-icon {
+    width: 48px; height: 48px; margin: 0 auto 12px auto;
+    color: #818cf8; display: block;
+}
+.card-icon svg { width: 100%; height: 100%; }
+.card-title { font-size: 20px; font-weight: 600; margin-bottom: 8px; color: #f1f5f9; }
+.card-url {
+    font-size: 11px; color: rgba(255,255,255,0.5); word-break: break-all;
+    margin-bottom: 12px; font-family: 'Courier New', monospace;
+}
+.qr-code {
+    width: 110px; height: 110px; margin: 0 auto;
+    background: white; padding: 8px; border-radius: 10px;
+}
+.qr-code img { width: 100%; height: 100%; object-fit: contain; display: block; }
+.scan-text {
+    font-size: 10px; color: rgba(255,255,255,0.35); margin-top: 8px;
+    text-transform: uppercase; letter-spacing: 2px;
+}
+.footer {
+    text-align: center; margin-top: 30px; padding: 15px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+.footer p { color: rgba(255,255,255,0.4); font-size: 12px; letter-spacing: 2px; }
+.portfolio-card {
+    border: 1px solid rgba(129,140,248,0.3);
+    background: rgba(129,140,248,0.06);
+}
+.portfolio-card .card-title { color: #818cf8; font-size: 22px; }
+.portfolio-card .card-icon { color: #818cf8; }
+</style>
+</head>
+<body>
+<div class="container">
+<div class="header">
+<h1>FLÁVIO SALGADO</h1>
+<div class="subtitle">Conecte-se Comigo</div>
+</div>
+<div class="grid">
+<div class="card">
+<div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></div>
+<div class="card-title">LinkedIn</div>
+<div class="card-url">https://www.linkedin.com/in/flaviosalgado/</div>
+<div class="qr-code"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcIAAAHCAQAAAABUY/ToAAAEDUlEQVR4nO1cW26rQAz1GKR8EqkL6FLIDu6aurOwlC6gEnxGAvnK9jxorriTUKI0g88HhcRHIdMjP4c4gnXocCURwJg5YNZiCcbMAbMWSzBmDpi1WIIxc8CsxRKMmQNmLZZgzBJXyHnUADDUeglduAxnwer05LtdA1zFYhjzxhVqidHL+eTk0p2aEaB7H/ndkd+oxCgk4ba2OeDOmIP3L869E9HHMaqpnxx0x8nJC95VPf1u7weu4CiMefcKteyMRDnt54FUVyeo9Oy/zJuBxixqheqra+rct0sYjkDdqR4Jhq0+E41Z5Ao1RHQOZ5IPaSrU8SGCSDOjZ9/t/cAVHIUxs6BZmgwVQdsvHgBmCfjZ1jYH3JWGZjin8os9EjQj0JkrtPbK7rW+Jxrz8Ss0OXcanANoLk67Qgyi6IcE2ina6jPvBt5P8TDmo/0QaKAKSZEeOPchOcRLNTE/dBtwZ/lQE+QjUmlTVOvZSAJaypYslhWoBFzNrOUokcpBw4LhYh5gqqHt39SGYDiwhXQbKzV+te+Jxnx4LCP2Pj2HMfFIMWRRCGj67sxL2X8lB9xbPlRpDRYgYazyiZLOy6Rx1PuqzTRUmhLw5/2hKpb14nhCy7Fl0XBtL77Jt5BMQwUqAVczIXWFkrvx8glC+rdCMz9UnhJwNRO8IkKg0jGHuJs49SBNjySMWV1WqhLwh3WZg0aKswvvPKs0KyIYaj6bainTqPtzcXp43t2iMX/tCpEEr84d2PFc/K4h7ljTB7/mIRtA4i4Q+3/mgHuMZeSLeYWv9yufLYlxKvqtti9MCfjjmWsvzigk1l45EMatOrL3OZJpqEgl4BYaAt8BkpdjTt2HSJeqNvNDJSoBVzMh9YKC40nKqcIgjftDaYJv/aESlYCbxDJFaEwn5dDsNesxlqoEXM2EuXKSk5l1rMc4svfpkRIspy5MCbjF3g9I+ZDvLI4+ggmk+Zg2M5qGClMCbjEvg5g/X+mKNNLpuNXm9oUqAbfY+0EavIIfCuNWCvOPMHM1P1SkEnCTvR9t7CfGM4r7GANMQ4UqATd7rgN0h9CsTKviVN/8UMlKwO2eLwPxOfow0BgenU7b1Ky2L1UJuJpZ659WWtHDGz8XzUPWoQbqjl/6JuksX8X1ZXP7MpWAmzwb1Pbfi7M49Wiv5rBW2xeoBNxOQzDb8jpqezFtP7O5fblKwM2YRP3kiHgTkd9ONIL/AZlGzvh52F9zt7cD77D9DmPeukJN2EUtytEt+vzUdHcMoe3jODk6h4eobW3zwJ0wa/3jf3Wo4mQnvMW/YQUKdkFtz7tlmx7cK35PNObDVsjZb5xngDmDRRgzB8xaLMGYOWDWYgnGzAGzFkswZg6YtViCMXPArAXsnPkXWWa0xDMSti8AAAAASUVORK5CYII=" alt="QR Code LinkedIn"></div>
+<div class="scan-text">Escaneie para acessar</div>
+</div>
+<div class="card">
+<div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></div>
+<div class="card-title">GitHub</div>
+<div class="card-url">https://github.com/flaviosalgado2</div>
+<div class="qr-code"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZoAAAGaAQAAAAAefbjOAAADTUlEQVR4nO1cbW6jQAy1YSR+gtQD9CjDzVZ7M+YoOUAl+BkJ5JU/hhCtVioKm5CO3w9aPqww7pP97HGKBLuRqv02AG5kcEcY3BEGd4TBHWFwRxjcEe/kCDQEwH4KfBoAEiICwILYT/mB/iWvtxNudIAjIjFG/rW9IhFdEft2BoCpYe1Zy/2sQt3lBThiygEgYUPYTw0RXRpC/LxiDiPhda+3C250pCNokMggFGAyxEsAGv7HJ30LbnQCR0xCgYXJwAmjncHUw+Gf9A240dMdEexnyxphAkBovzhN1LMkC0rdSHJj28nyv9PPd0SSSqJjjcmRIYrG5NTx68L1BxccjFe93j640eMxgjZXuNZIWU9C6gDp/gF3+Y/mHmhZSRwU4ljnSlNOudxco8XtGg0nX1PlRo8zYuAKIxKXGe1fBxqYJUPLBHFGlKIspwCUkGPEFADisPDFmjAOQBjHDgkmzMnj5Guq3OjhGAHAAWCNB3KaW5jzXWLxGFEKI4DzgpBB21Q3lhhVJKdYijn5mio3OkJZ1nzMwkFYIkJTtYWqTTl1RhShI5Brzs3V1NdMhIXVwwfJHT5wHfrc16vc6FXVZ4ZdGzl1rM9oZLgVJv53Mvzo6pNUO2r+EDJwKyLfFR2R4YwogRFQ51qDubHVmEwGVRnejyio1oib/qTpyY2UFMm5CRknX1PlRgcwYrQYoeWmCoc8KaHtCc0kzojydARJ6shkuKeKx4iyOlSM3ICAtTNh+SPf9axRTtYg2dDSNpWIiXU/VGSFV59l7XQBj9GRNqKAUr9ow4pSV/P+lpUevPF1/jVVbnTEVN0cCCYeompHwEhLIIA5YBw/lCUA7Vd+2F1ewgxVLbtaGgWkd70NHoMEj1r72adfU+VGRyhLgQzG5JbUWn/cCg7Vl96PKKRDRVpS6GgdY52rkv6VwGuN4r7ThTx3bbTguarf2JB+A3RTlr7JmnbBjf7liPTJX9nhzXEbu+Rtcu5jpm4NHu69EqrPFfLVX6k6dDSiIYQpzKSHd1hT5UZH6ohB5+vyfMS6w5H7V64sy4gRSevKWtoOSHHMnQmAJQC00rjkkaonv17lRs92BPp/JlM49wzuCIM7wuCOMLgjDO4IgzsCFH8AaqOPCHuZ/K8AAAAASUVORK5CYII=" alt="QR Code GitHub"></div>
+<div class="scan-text">Escaneie para acessar</div>
+</div>
+<div class="card">
+<div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><path d="m10 15 5-3-5-3z"/></svg></div>
+<div class="card-title">YouTube</div>
+<div class="card-url">https://www.youtube.com/@flaviosalgado</div>
+<div class="qr-code"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcIAAAHCAQAAAABUY/ToAAAEG0lEQVR4nO1cbY6jMAx1DNL8pNIeYI5Cb7ZXo0fpAVaCnyOl8sqOIWl3UdqUzkfw+1GVkKcyzNOzHQccQRlOWEgEMGYOmJ2xBmPmgNkZazBmDpidsQZj5oDZGWswZg6YnbEGY9Z4h5yiBYBpPuBDF3FcThy/+GpLgEUshjHvvEM9MUZW0zsRDWHsw9HQEYWzAzQyaU7C7d7mgDtjTuovNEzOAXSev7Xgfo8XJ5KSs2pVX361jwMLOAHGzKH9Z6T707p+vIDrB98STAdw/2Xavc0B98rsz28Ep0PDHwDyTYJciG+v+c27gfdPvYExX3+HOs2CnHv/YN+5OKJzy0mRB3fsiEKkI/Lb/ebjwAJOgDFffodOUnAdZh/iD3eEhtxxklpNQt4llGVb/WYBsIQkMObr7hDQNQCg4ULMA9HYaIUmLnWDwf4rOeD+mI5BNF6cGI9z7z7EMhrYgnh9SMzoe1ztg8BHCQuMmQWJ+wSp8FqQjLH76ILQyLbEjrS4lPnQncC9aYhC3AoRLChHAtq8qCgKiwuNFstqUwIWM+EqCxJI8GJ0WoNJbR/WHVVcpqH6lIDFTEjaFxyyoOe1oMWH4MaMZKXIfKhGJWAxE1QgkgpJh4MHF+UI1JGkczZnRhbLalMCFjNBFRECVcykJQHymgUl7hMZP+vvRGN+Zl3WBLuZzchzkIutfcuH7gbuL5YRW1Cs3sPZYYlgYlAa6cyH6lMCPu1Do/qLjoUCH5azPDq7lMWyKpWAW9T2JD6kQhKpeC3rY1SLXQ/LhypTAj7N7Dy438Qt+5uWRue153ri7Wf92fbCVq6E8j1oU+tlvxkBEG8/417+kdOjeYy9yYc9RT/x70RjfkavA0JivVT5+tHMOZL1yx4E7m19iEISfaUmWgoxKfC1kWb5UJVKwCdjmevPDqAfCBwHrzAG0HrXj3w4/SInextPx+YrrxaN+X19iELImj+0aQZXq9NJI83qsnuA++3b07WQGu2myRKS1fbVKgE32Qs7yEDokmn3lfRpDpFP2oe19aHalIDPxzIIq4ixaZaMUUynLZbVqgR8vl/mtbUqSL81upMoPTQfqk8JuN1zHX18pGMJaOkS0hzQrNdRmRJwy/d+tJwUyYOKoM8oJiemN3tnQ81KKAItJpMU+MnWIYoGlfb3zYdqUwIWMyHZ3RGr9/jGGLraFBJgGqpRCbgZk8K7Y6RRf7g4abLKW2S0ExKfff0OV3s/8IG51zDm4++OgcZDz7bTD0BOvi0dDoLp4tSS7N7mgDvNhxTznnxIn+bQ8j/MsLqsMiXgJs+XwbyyOCsHlilxodHyoUqVgE/GMkpGOj2Yd56lvY549qf9nWjMDDA3YRXGzAGzM9ZgzBwwO2MNxswBszPWYMwcMDtjDcbMofwO/QU6fcyNFRmiuAAAAABJRU5ErkJggg==" alt="QR Code YouTube"></div>
+<div class="scan-text">Escaneie para acessar</div>
+</div>
+<div class="card">
+<div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></div>
+<div class="card-title">E-mail</div>
+<div class="card-url">mailto:contato@flaviosalgado.com.br</div>
+<div class="qr-code"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcIAAAHCAQAAAABUY/ToAAAEFElEQVR4nO1cUY6jMAx9MZXms5X2AD0KvcEeaTU3g6PMAVaCz5GovIrjBDojlBaYmW3w04ppwE8t7JNjOw6OsQwtLSQCxsyBshZzMGYOlLWYgzFzoKzFHIyZA2Ut5mDMHChrMQdjlviEnOIAtKerA3rn0MqpE+AuYtRHq8vT3ucS0CLWnphgD9Typ6v8AZAhaj9sRhO5moyb57pPMuaXP6Fe/Ys4HrRyOL87ABWrbwr+6rDddz4OWsAJMOZ3PqGjdzK4OtRvB7g/ncin+lwCsP+VHGgnzMOHsWjF4ZiGfTV4NQ0bficZs0gNHb14+ukV9v9c3QzhEM9t8J1kzBKfUDvmYP0BqN9eOHzCeMA1pGU//2sXgJaQBMa8zw9xGnN7HvSA/uq4PVV++O7ELU1hzzYH2gkTIV9nHoC6AySZj58qTeZ9nK0ZfTxnuX1pSqC1GmqiSlDzAG6Og78wpE8qn7FIZBoqTQm0mAn1NOJfpKiYfI5oiEOhUZQjgbUXkmmoQCXQFn6Ig3y6VAvyQxVXnNpsLitWCbSYiThRSRQks5U/FzzSEFc9wlqHGOs5m8tKUwKtrw/9PQBHn375omJ7qUJGz8D1gNZJwsZwk4r1c90nGfPL87LuZjUj5GXeD0Fi6uib5IL5oTtBe8ztOWXvYQW/4pv5Tewtpi5UCbS+92MIpaFRKmHYBGc0uirTUKFKoG1ye74pEk1T/SFWikJgbTF1eUqg9RrCNHuXemLwPoLkm8L85k9ZD1phSqD19aEhdS/K6VhUrKWymCpFk7L1c90nGfM7YmrWAEglNVYWkbpix3KRaSgP2l9MDZ/HB6SgCJLbq3xkWdbWywpVAq1kctO/sHQNad+r39chqKWTKInLS8r2dRSshEVgjZqjf0lRc3RLVfgUMrSRYfFQYUqgTepDHEuJmpd9qA/F6No0VKQSaPV6WX+KTdWoBlezb2H83cGF+a33Pfn9L3/5euBnvE8y5pfXh47ax6gIhWlonD02OIahzWV3gXbChM5lqbEj1IJiKMTTfa5xprN4qEQl0HpmpRs5Uiu1bOSAXHB+n6vf++rcWQPrp73Ph0GPU/ZaY1RoVQjTTfdIPflWHypXCbTFehkmDWaxNZZD7ToWq/XgKZbbF6YEWsusRUqx84ybtDOxDn7Iv73Bx0iy8ax53vtcAFpC2hUTOoNJf+LoZD4ssnbJ3NZcS1UCbachfJ63oJOc7esoWQm0GZO5uzp+9VPWa3wjms5vx3fnLnL4b37t/aAHbG9hzCxYszGJh1KLR3rnGUKNsbq5ajH1XaCdvvcDOnnpG0A4VaedO4/daD/8axeAlpAExszB2TvOM6CcwSyMmQNlLeZgzBwoazEHY+ZAWYs5GDMHylrMwZg5UNYCO2f+A/36nw8zbEVuAAAAAElFTkSuQmCC" alt="QR Code E-mail"></div>
+<div class="scan-text">Escaneie para acessar</div>
+</div>
+<div class="card">
+<div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+<div class="card-title">WhatsApp</div>
+<div class="card-url">https://wa.me/5511999999999</div>
+<div class="qr-code"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZoAAAGaAQAAAAAefbjOAAADPUlEQVR4nO1c223rMAwlbQP9lIEOkFHUDTpSZ7obRKNkgAD2ZwAZvOBDsYN7P2LUrZOIB6hr2SYiM+zhQ1SRYDVSs14GwIUMrgiDK8LgijC4IgyuCIMr4pkUgYaOBxPatX7Sa/gxlgc+dpneSrjQBoqIxBiAv302ATaLOADINTpCK/dLFOoqr0AR45UAoCVI2AEd2TbwkNlAhEa6/aa3Ci60qSJSz6QQMgAEIYUJ6fgjn3QPXGh/RcRhQvw6vZHaBnuNH/qke+BCv66Izn4HpoOxcETqW0AIUzfXr5aVLP+eXlgRsIwYoSWIw/8O5QGJQI8P/k6NC32bI+g6FnoAOVgeygdhkBmu8gq8xvieIXFOEYkNZHxnT5I7grHNkPrzjeU8+Ds1LvRti0D9Cewdxl4vUcLWcg0YOzUGjJJ2uMoNLxxHRMqWV1hdSkpSmYtT8kgGiyg8jqjGa/RMAJZwIITMnNESxoHdyeeZOeKCz/FOjQttkGsEqWKLm2htqGUqKWAXenCOqMdrDMU56DUdslnocGkWnn3WIdQSwPimBQhdzZBlzy+2klQWN/ab3hq40Cb1iAyQPjPXI0CTizn1QAjyiMcR9dUsgRe5LKwo+UfLrkMOV0/y4O/UuNAWkWWGf+zgOtT+CMlN3SJe3fa6mziiY7sodal46jKl/qx1TNxleo0L7eM1aOESxENoa4Qxg6WlgcnDOaIWgw3MDtw09UUSQN72yYQLLjslnuSdVsGFCvTPnkqQMFNBeaDUs7WU7RxRhxkh9tJdiWjdlXxmZjGhtF0Kg+w0vZVwoQ3iCJKUIsx5hQUT85qXJSHOEa9ue1CooNWgUiMKXcMoS6GGcsPrEXVwhMGulpUuDS8XBsLPeIWqqj1dUdzEyc4s2tQQQgoVe0xvJVxoyz1dwL3YkA4X29AjQ6to+rpGZR0zEP9YiyXGYZKzLC36kLRg6RxR7Z4u4HVx4QgtZkrvDOem+0/vHrjQJusaBoxDbzVL7orgLV6ScBBCOHfeeVvfni5KB5I+y7ltn41hAEofbx5ZVrini46L7FPulTZs3fHl2eerC6H/Z7Kn+J4aF1K4IgyuCIMrwuCKMLgiDL+niL+aMktm+iGriAAAAABJRU5ErkJggg==" alt="QR Code WhatsApp"></div>
+<div class="scan-text">Escaneie para acessar</div>
+</div>
+<div class="card portfolio-card">
+<div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" x2="22" y1="12" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+<div class="card-title">Portfólio</div>
+<div class="card-url">https://flaviosalgado2.github.io/</div>
+<div class="qr-code"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZoAAAGaAQAAAAAefbjOAAADKklEQVR4nO1bS46jQAy1ASlLkOYAOUpxgz5SK0eaG1BHyQFagmUkkEf+FCRZhQ4thi6/BQkQi2As1/OzQYLViMV6GwA3MrgjDO4IgzvC4I4wuCMM7ogjOQINFWALE2KrxyrbtEP6QXuce1oJN3p0RCBGD0CXhjdY8dEJqatH/lbK+cRC3Xu/2BGVfQ4NQPgLgFCXhKH/AxTbckQ+IkCAcjzGPRVutEFEJEgaIBgmDoQJKX58Pf/EXZ5V7CE2xiN++kovwY12WzVqTg4DAMWPkmSFSJsT6Yl3r1S40ZEcEaWSaADw85qCJPS20fqDsdffWwc3escR+KRi4316YCo5NA/pgeEqdi6xF7ECKUEB6psWnqpMtIOIEqJW7Pf3XoYbveMIUKGhg5Ig0Ki7slZQB/PmQZSgzl1u+I2OgDvlKfSlxQakAJFjAPWoYeERkY1R4PRwOd9MhZDMwOql7pKwzeFEvmoc8eGugxYWFJueMPCDDwSAgUShqvjErFTWwjAOcE+FG22QI66YehiDFJmyavByUt/S7hwQ7vKceAQwZ1hCgEi5hSkTziOyqTVIa04uM3SfqeRMMDo+IZCzXmtkkCPCc8GxJAWpMDhv1BY8HhE5MEuQbng3VRTPiUnOEPFaAgZDd4B7Ktzo7YjA0I0VRXn0Q+peQD1WEFsJhqny+YhMYg+SSFkmzXL+JqXH3O4S6cpXjXyYJdlaoaN1RjQXzVLqUNcsc8sRINxRkoIGiHFMZ5Y5GtW8THB3ExvpayyJQooQXjCuPh9x0If7vepzNO1By83HVUNVCOcR2WmWDOuLz3zy7qzrEXkxS4M+eBYptf1tgxNLOeIKVVY5orTXeJYVQomm8M5lvOY/v6fCjbaYj2DolC2P35J0PGVYf+l+bXKldXCj3Rwx2EuddEm1hry5oR0OntQW3ukTMxkGbNAxCCk3T/fqZUR+c2Pvv/cK3GhTR8Qzz9fxi104bz6FVPYyV7XdlV6BG+3ZDSeZjlEpQuXKRce0XYUzy6xqjU7aFxICOkCzjEZ4XyPHd7pegb/TdZCHW7iRwh1hcEcY3BEGd4TBHWH4liP+AWmbY49rLsJ/AAAAAElFTkSuQmCC" alt="QR Code Portfólio"></div>
+<div class="scan-text">Escaneie para acessar</div>
+</div>
+</div>
+<div class="footer"><p>© 2026 FLÁVIO SALGADO · TODOS OS DIREITOS RESERVADOS</p></div>
+</div>
+</body>
+</html>
